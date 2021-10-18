@@ -1,0 +1,39 @@
+
+### GET clicks for datasource and date range
+GET {{host}}/api/metrics/datasource/Google%20Ads/clicks?from=11%2F12%2F19&to=11%2F13%2F19
+
+> {%
+    client.test("Request executed successfully", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+### GET campaigns and date range
+GET {{host}}/api/metrics/datasource/Google%20Ads?from=11%2F12%2F19&to=11%2F13%2F19
+
+> {%
+    client.test("Request executed successfully", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+### GET ctr for datasource and campaigns
+GET {{host}}/api/metrics/datasource/Google%20Ads/campaign/Adventmarkt%20Touristik/ctr
+
+> {%
+    client.test("Request executed successfully", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+
+%}
+
+### GET all impressions groupped by day
+GET {{host}}/api/metrics/impressions/daily
+
+> {%
+    client.test("Request executed successfully", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+
+%}
+
