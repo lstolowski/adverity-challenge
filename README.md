@@ -31,6 +31,9 @@ http://localhost:8080/api/metrics/datasource/Google%20Ads/clicks?from=11%2F12%2F
 - CTR by the datasource and the campaign
 http://localhost:8080/api/metrics/datasource/Google%20Ads/campaign/Adventmarkt%20Touristik/ctr
   
+- all impressions groupped by day
+http://localhost:8080/api/metrics/impressions/daily
+  
 #### notes
 The rest api and the data model is very simple, so request params are based on given datasource and campaign names. 
 Thats why it should be urlencoded in query 
